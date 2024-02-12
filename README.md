@@ -1,3 +1,4 @@
+git add README.md
 ---
 editor_options: 
   markdown: 
