@@ -17,7 +17,7 @@ Group species:
 ### **Favorite Species**
 
 Grace: 
-My favorite species is the shiras moose. There are four different subspecies of the moose found in North America; the eastern, the northwestern, the shiras and the Alaskan moose. Aside from the differences in geographical distribution, the different subspecies of moose are further distinguished by features such as size, pelage, and antler characteristics. Moose primarily eat deciduous shrubs. The moose is the tallest, and the second-largest, land animal in North America, falling short only of the American bison in body mass. 
+My favorite species is the shiras moose. There are four different subspecies of the moose found in North America; the eastern, the northwestern, the shiras and the Alaskan moose. Aside from the differences in geographical distribution, the different subspecies of moose are further distinguished by features such as size, pelage, and antler characteristics. Moose primarily eat deciduous shrubs. The moose is the tallest, and the second-largest, land animal in North America, falling short only of the American bison in body mass.
 
 Dianara:
 
