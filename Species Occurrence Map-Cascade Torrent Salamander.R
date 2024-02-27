@@ -25,5 +25,21 @@ d <- occ_download_get('0022330-240216155721649', path="data/") %>%
 
 View(d)
 
+fData<-d %>%
+  filter(!is.na(decimalLatitude),!is.na(decimalLongitude))
+
+fData<-fData %>%
+  filter(countryCode %in% c("US", "CA", "MX"))
+
+fData<-fData %>%
+  filter(! basisOfRecord %in% c("FOSSIL_SPECIMEN", "LIVING_SPECIMEN"))
+
+fData<-fData %>%
+  cc_sea(lon="decimalLongitude", lat="decimalLatitude")
+
+fData<-fData %>%
+  distinct(decimalLongitude, decimalLatitude,speciesKey, datasetKey,.keep_all = TRUE)
+
+
 write_csv(d, file="data/rawData.csv")
 
