@@ -12,3 +12,18 @@ if(any(installed_packages==FALSE)){
 invisible(lapply(packages, library, character.only=TRUE))
 
 usethis::edit_r_environ()
+
+salamanderBackbone<-name_backbone(name="Rhyacotriton cascadae")
+speciesKey<-salamanderBackbone$usageKey
+
+occ_download(pred("taxonKey", speciesKey), format="SIMPLE_CSV")
+
+View(salamanderBackbone)
+
+d <- occ_download_get('0022330-240216155721649', path="data/") %>%
+  occ_download_import()
+
+View(d)
+
+write_csv(d, file="data/rawData.csv")
+
