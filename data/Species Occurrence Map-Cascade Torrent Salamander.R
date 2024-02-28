@@ -1,6 +1,6 @@
 #installing packages
 #list of packages
-packages<-c("tidyverse", "rgbif", "usethis", "CoordinateCleaner", "leaflet", "mapview")
+packages<-c("tidyverse", "rgbif", "usethis", "CoordinateCleaner", "leaflet", "mapview", "webshot2")
 
 #install packages not yet installed
 installed_packages<-packages %in% rownames(installed.packages())
@@ -41,5 +41,5 @@ fData<-fData %>%
   distinct(decimalLongitude, decimalLatitude,speciesKey, datasetKey,.keep_all = TRUE)
 
 
-write_csv(d, file="data/rawData.csv")
+write_csv(d, file="data/cleanData.csv")
 
