@@ -24,10 +24,11 @@ map <- leaflet(options = leafletOptions(zoomControl = FALSE)) %>% # The options 
   # Add the legend / title
   addLegend(position = "topright",
             title = "Species Occurences from GBIF",
-            labels = "Habronattus americanus",
+            labels = "Cascade torrent salamander",
             colors = "brown",
             opacity = 0)
 
 # Save the map
 mapshot2(map, file = "output/leafletTest.png")
 
+#The occurrence points are concentrated in the Cascade Range and are spread linearly north to south from this region.
