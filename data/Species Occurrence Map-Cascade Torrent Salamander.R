@@ -28,6 +28,8 @@ View(d)
 fData<-d %>%
   filter(!is.na(decimalLatitude),!is.na(decimalLongitude))
 
+
+
 fData<-fData %>%
   filter(countryCode %in% c("US", "CA", "MX"))
 
@@ -40,6 +42,6 @@ fData<-fData %>%
 fData<-fData %>%
   distinct(decimalLongitude, decimalLatitude,speciesKey, datasetKey,.keep_all = TRUE)
 
+write.csv(fData, "data/cleanData.csv")
 
-write_csv(d, file="data/cleanData.csv")
 
