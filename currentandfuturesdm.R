@@ -129,7 +129,7 @@ salamanderCurrentSDM <- dismo::maxent(x = presenceAbsenceEnvDf, ## env condition
 
 
 # bump up our bounding box
-predictExtent <- 1.25 * geographicExtent 
+predictExtent <- 5 * geographicExtent 
 
 #crops the geographic area 
 geographicArea <- crop(currentClimRasterStack, predictExtent, snap = "in")
@@ -155,7 +155,8 @@ xmin <- min(salamanderPredictDf$x)
 ymax <- max(salamanderPredictDf$y)
 ymin <- min(salamanderPredictDf$y)
 
-
+xmin<--125
+xmax<--118.5
 ggplot() +
   geom_polygon(data = wrld, mapping = aes(x = long, y = lat, group = group),
                fill = "grey75") +
@@ -212,6 +213,9 @@ xmax <- max(salamanderFutureSDMDf$x)
 xmin <- min(salamanderFutureSDMDf$x)
 ymax <- max(salamanderFutureSDMDf$y)
 ymin <- min(salamanderFutureSDMDf$y) 
+
+xmin<--125
+xmax<--118.5
 
 
 ggplot() +
