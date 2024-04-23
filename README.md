@@ -4,7 +4,7 @@
 #Group 4 SSA / Species Distribution Modeling
 
 \
-**Group Members: Dianara Sagastizado, Grace Blunck, Hayley Krepps, and Kaia Hirsch**
+**Group Members: Dianara Sagastizado, Grace Blunck, Hayley Kreps, and Kaia Hirsch**
 
 Group species:
 
